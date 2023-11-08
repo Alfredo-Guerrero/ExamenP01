@@ -9,7 +9,7 @@ function PropiedadesForm() {
     direccion:"",
     caracteristicas:"",
     estado:"",
-    precioalquiler:""
+    precioalquiler:"",
 
   });
 
@@ -17,7 +17,7 @@ function PropiedadesForm() {
     //console.log(e.target.value, e.target.mane);
     setPropiedades({
       ...propiedad,
-      [e.target.nombre]:e.target.value
+      [e.target.name]:e.target.value
     });
   }
   const handleSubmit = async (e) =>{
